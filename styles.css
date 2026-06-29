@@ -132,19 +132,19 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(3.4rem, 8vw, 6.8rem);
+  font-size: clamp(2.72rem, 6.4vw, 5.44rem);
   color: var(--forest-dark);
   max-width: 8ch;
 }
 
 h2 {
-  font-size: clamp(2.6rem, 5vw, 4.4rem);
+  font-size: clamp(2.08rem, 4vw, 3.52rem);
   color: var(--forest-dark);
   max-width: 10ch;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--clay-dark);
 }
 
@@ -363,8 +363,65 @@ h3 {
 }
 
 .framed-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   background:
     linear-gradient(180deg, rgba(250, 238, 205, 0.96), rgba(240, 215, 164, 0.94));
+}
+
+.campout-card-art {
+  margin-top: auto;
+  border: 2px solid rgba(125, 77, 43, 0.4);
+  background: rgba(248, 234, 201, 0.7);
+  overflow: hidden;
+}
+
+.campout-card-art svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.campout-sky {
+  fill: #e3c48b;
+}
+
+.campout-moon {
+  fill: rgba(248, 227, 169, 0.95);
+}
+
+.campout-hill-back {
+  fill: #6b7c52;
+}
+
+.campout-hill-front {
+  fill: #3c6042;
+}
+
+.campout-trees,
+.campout-kids {
+  fill: #203626;
+}
+
+.mini-tent {
+  fill: #c6673d;
+}
+
+.mini-tent-flap {
+  fill: #f0ce84;
+}
+
+.mini-fire-shadow {
+  fill: rgba(39, 25, 17, 0.22);
+}
+
+.mini-log {
+  fill: #233b2b;
+}
+
+.mini-flame {
+  fill: #ec8b3f;
 }
 
 .trip-highlights {
@@ -477,11 +534,11 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(2.8rem, 18vw, 4.4rem);
+    font-size: clamp(2.24rem, 14.4vw, 3.52rem);
   }
 
   h2 {
-    font-size: clamp(2.1rem, 12vw, 3.2rem);
+    font-size: clamp(1.68rem, 9.6vw, 2.56rem);
   }
 
   .text-card,
@@ -489,6 +546,10 @@ h3 {
   .contact-card {
     padding: 22px;
     box-shadow: 7px 7px 0 var(--shadow);
+  }
+
+  .framed-card {
+    gap: 12px;
   }
 
   .hero-lead,
